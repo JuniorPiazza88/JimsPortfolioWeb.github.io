@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(120deg, #1f1c2c, #928dab);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      animation: slideUp 1s ease-out;
+    }
+    h2 {
+      border-left: 4px solid #f39c12;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .project {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Showcasing my current and upcoming projects</p>
+  </header>
+
+  <section>
+    <h2>Current Projects</h2>
+    <div class="project">
+      <h3>Awesome Web App</h3>
+      <p>A full-stack web application using React, Node.js, and MongoDB.</p>
+    </div>
+    <div class="project">
+      <h3>UI/UX Case Study</h3>
+      <p>Redesigning a popular app to improve usability and visual appeal.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Future Projects</h2>
+    <div class="project">
+      <h3>Personal Finance Tracker</h3>
+      <p>A sleek dashboard to help users track income, expenses, and budgeting goals.</p>
+    </div>
+    <div class="project">
+      <h3>AI-powered Portfolio Generator</h3>
+      <p>An app that automatically creates a custom portfolio for developers based on their GitHub profile.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 My Name. All rights reserved.
+  </footer>
+</body>
+</html>
